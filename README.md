@@ -66,4 +66,5 @@ combinations of packages and binaries - virtual environments - easily).
 - tests: Where you put tests for your code
 
 You can create this project directory structure in the terminal with:
+
 `mkdir {data,docs,results,scripts,src,tests}`
