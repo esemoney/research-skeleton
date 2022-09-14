@@ -33,12 +33,12 @@ down the line.
 
 ## virtual environments with _conda_
 
-Virtual environments are used to manage dependencies. Each virtual environment specifies which versions of software and packages a project uses. The specs can be different for different projects, and each virtual environment can be easily swapped, created, duplicated or destroyed. Virtyak ennviroments solve the problem of one big monolithic Python environment when every package is installed in that one
+Virtual environments are used to manage dependencies. Each virtual environment specifies which versions of software and packages a project uses. The specs can be different for different projects, and each virtual environment can be easily swapped, created, duplicated or destroyed. Virtual ennviroments solve the problem of one big monolithic Python environment when every package is installed in that one
 environment. Since this environment is not documented anywhere, if you need to move to another computer, or need to recreate the environment from scratch several months later, you would be in for several hours or days
 of frustration.
 
 ⚠️ You can use software like conda, pipenv, poetry, venv,
-virtualenv, asdf or docker to manage dependencies. Here I use the conda workflow, which is popular among
+virtualenv, asdf or docker to manage dependencies. Here we use the conda workflow, which is popular among
 data scientists and researchers.
 
 ### terminal
@@ -47,9 +47,9 @@ data scientists and researchers.
 (something that installs package on your system) and a virtual environment manager (something that can swap out different
 combinations of packages and binaries - virtual environments - easily).
 
-1. ` conda create --name codebook python=3.8`
-2. `conda activate codebook `
-3. ` conda install pandas numpy scipy matplotlib seaborn`
+1. `conda create --name codebook python=3.8`
+2. `conda activate codebook`
+3. `conda install pandas numpy scipy matplotlib seaborn`
 4. `conda env export > environment.yml`
 5. ``
 
@@ -64,3 +64,6 @@ combinations of packages and binaries - virtual environments - easily).
 - scripts: Where you put scripts - Python and bash alike - as well as .ipynb notebooks.
 - src: Where you put reusable Python modules for your project. This is the kind of python code that you import.
 - tests: Where you put tests for your code
+
+You can create this project directory structure in the terminal with:
+`mkdir {data,docs,results,scripts,src,tests}`
