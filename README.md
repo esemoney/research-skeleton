@@ -1,5 +1,12 @@
 # this is a sample project directory to guide my future research
 
+## to get started
+
+paste in `git clone https://github.com/esemoney/research-skeleton.git` to your terminal and press enter.
+
+next, type `cd research-skeleton`
+
+
 _adapted from **Good research code** - Patrick Mineault_
 
 ## instructions summary
